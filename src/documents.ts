@@ -29,8 +29,8 @@ const extractFragments = (document: IOperationType): string[] => {
   const names: string[] = [];
 
   visit(document, {
-    enter: {
-      FragmentSpread: (node: FragmentSpreadNode) => {
+    FragmentSpread: {
+      enter: (node: FragmentSpreadNode) => {
         names.push(node.name.value);
       }
     }
