@@ -30,7 +30,7 @@
     "@graphql-codegen/cli": "^1.5.0",
     "@graphql-codegen/core": "^1.5.0",
     "@graphql-codegen/plugin-helpers": "^1.5.0",
-    "@types/graphql": "^14.0.5",
+    "@types/graphql": "^14.2.3",
     "@types/jest": "^24.0.17",
     "@types/lodash": "^4.14.120",
     "bs-platform": "^5.0.6",
@@ -39,7 +39,7 @@
     "typescript": "^3.2.2"
   },
   "dependencies": {
-    "graphql": "^14.1.1",
+    "graphql": "^16.8.1",
     "graphql-tag": "^2.10.1",
     "lodash": "^4.17.11",
     "reason": "^3.3.4"
