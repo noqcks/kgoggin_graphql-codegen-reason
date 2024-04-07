@@ -30,7 +30,7 @@ const extractFragments = (document: IOperationType): string[] => {
 
   visit(document, {
     enter: {
-      FragmentSpread: (node: FragmentSpreadNode) => {
+      FragmentSpread(node: FragmentSpreadNode) {
         names.push(node.name.value);
       }
     }
