@@ -202,7 +202,7 @@ export const makeVisitor = (config: ReasonConfig) => {
   const visitEnumTypeDefinition: VisitFn<
     ASTNode,
     EnumTypeDefinitionNode
-  > = node => enums.push(node);
+  > = (node: EnumTypeDefinitionNode) => enums.push(node);
   const visitInputObjectTypeDefinition: VisitFn<
     ASTNode,
     InputObjectTypeDefinitionNode
