@@ -191,7 +191,7 @@ export const makeVisitor = (config: ReasonConfig) => {
   const enums: EnumTypeDefinitionNode[] = [];
 
   // visit functions
-  const visitScalarDefinition: ASTVisitFn<
+  const visitScalarDefinition: visit.ASTVisitFn<
     ScalarTypeDefinitionNode
   > = (node: ScalarTypeDefinitionNode) => scalars.push(node);
   const visitObjectTypeDefinition: VisitFn<
