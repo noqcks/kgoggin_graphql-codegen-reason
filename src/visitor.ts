@@ -206,7 +206,7 @@ export const makeVisitor = (config: ReasonConfig) => {
   const visitInputObjectTypeDefinition: VisitFn<
     ASTNode,
     InputObjectTypeDefinitionNode
-  > = node => inputObjects.push(node);
+  > = (node: InputObjectTypeDefinitionNode) => inputObjects.push(node);
 
   // write the result
   const write = (
