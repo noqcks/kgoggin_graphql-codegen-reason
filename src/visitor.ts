@@ -198,7 +198,7 @@ export const makeVisitor = (config: ReasonConfig) => {
   const visitObjectTypeDefinition: VisitFn<
     ASTNode,
     ObjectTypeDefinitionNode
-  > = node => objects.push(node);
+  > = (node: ObjectTypeDefinitionNode) => objects.push(node);
   const visitEnumTypeDefinition: VisitFn<
     ASTNode,
     EnumTypeDefinitionNode
