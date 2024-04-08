@@ -1,6 +1,6 @@
 import { ReasonConfig, LoadedFragment } from ".";
 import {
-  VisitFn,
+  visit,
   ASTNode,
   ObjectTypeDefinitionNode,
   ScalarTypeDefinitionNode,
