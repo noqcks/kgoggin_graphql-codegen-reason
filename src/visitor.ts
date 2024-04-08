@@ -194,7 +194,7 @@ export const makeVisitor = (config: ReasonConfig) => {
   const visitScalarDefinition: VisitFn<
     ASTNode,
     ScalarTypeDefinitionNode
-  > = node => scalars.push(node);
+  > = (node: ScalarTypeDefinitionNode) => scalars.push(node);
   const visitObjectTypeDefinition: VisitFn<
     ASTNode,
     ObjectTypeDefinitionNode
