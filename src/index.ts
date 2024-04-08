@@ -65,9 +65,7 @@ export const plugin: PluginFunction<ReasonConfig> = async (
 
   const visitor = makeVisitor(config);
 
-  visit(astNode, {
-    leave: visitor
-  });
+  visit(astNode, visitor);
 
   const result = visitor.write(documents, allFragments);
 
